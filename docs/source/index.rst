@@ -31,7 +31,7 @@ The first step is to **create a model instance**, where the main arguments are (
 
   my_model = pf.ARIMA(data=my_dataframe, ar=2, ma=0, family=pf.Normal())
 
-The second step is **prior formation**, which involves specifying a family for each latent variable in the model using the ``adjust_prior`` method, for example we can a prior for the constant in the ARIMA model :math:`N\left(0,10\right)`. The latent variables can be viewed by printing the ``latent_variables`` object attached to the model. Prior formation be ignored if the user is intending to just do Maximum Likelihood.
+The second step is **prior formation**, which involves specifying a family for each latent variable in the model using the ``adjust_prior`` method, for example we can specify a prior for the constant in the ARIMA model :math:`N\left(0,10\right)`. The latent variables can be viewed by printing the ``latent_variables`` object attached to the model. Prior formation be ignored if the user is intending to just do Maximum Likelihood.
 
 .. image:: http://www.pyflux.com/welcome_pack/introduction/model_api_2.png
   :align: center
